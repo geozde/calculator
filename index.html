@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css"></head>
+    <style>
+        th, td {
+            border: 1px solid blue;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+<body>
+    <h1 id="myHeader">Dingilrechner</h1>
+    <p id="display">---</p>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <button id="7" onclick="parseInput(7)">7</button>
+                </td>
+                <td>
+                    <button id="8" onclick="parseInput(8)">8</button>
+                </td>
+                <td>
+                    <button id="9" onclick="parseInput(9)">9</button>
+                </td>
+                <td>
+                    <button id="mul" onclick="parseInput('*')">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="4" onclick="parseInput(4)">4</button>
+                </td>
+                <td>
+                    <button id="5" onclick="parseInput(5)">5</button>
+                </td>
+                <td>
+                    <button id="6" onclick="parseInput(6)">6</button>
+                </td>
+                <td>
+                    <button id="div" onclick="parseInput('/')">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="1" onclick="parseInput(1)">1</button>
+                </td>
+                <td>
+                    <button id="2" onclick="parseInput(2)">2</button>
+                </td>
+                <td>
+                    <button id="3" onclick="parseInput(3)">3</button>
+                </td>
+                <td>
+                    <button id="sub" onclick="parseInput('-')">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="0" onclick="parseInput(0)">0</button>
+                </td>
+                <td>
+                    <button id="add" onclick="parseInput('+')">+</button>
+                </td>
+                <td>
+                    <button id="eq" onclick="parseInput('=')">=</button>
+                </td>
+                <td>
+                    <button id="del" onclick="parseInput('del')">del</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="debug"></p>
+    <script src="test.js"> </script>
+</body>
+</html>
